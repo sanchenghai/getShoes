@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "getShoes",
+  "version": "1.0",
+  "description": "when we visit store.nike.com, this extension lets it auto get shoes to trolley",
+  "web_accessible_resources":["/*"],
+  
+  "content_scripts": [
+    {
+      "matches": ["http://store.nike.com/cn/zh_cn/pd/*"],
+      "js": [ "jquery.min.js","getShoes.js"]
+    }
+  ]
+}
+
